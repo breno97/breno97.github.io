@@ -31,8 +31,6 @@
   width: 150px;
 }
 
-.efeito {
-}
 .topo-menu .efeito::before {
   content: "";
   display: block;
@@ -53,4 +51,8 @@
     gap: 40px;
     padding: 30px 20px;
   }
-} ;
+
+  .topo-menu .efeito::before {
+    display: none;
+  }
+}
