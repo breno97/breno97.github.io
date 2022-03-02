@@ -1,0 +1,56 @@
+.topo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.topo-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topo-menu a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  padding: 10px 20px;
+  color: #141414;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  border-bottom: 3px solid #ffffff;
+}
+
+.topo-menu li {
+  position: relative;
+  width: 150px;
+}
+
+.efeito {
+}
+.topo-menu .efeito::before {
+  content: "";
+  display: block;
+  background: url("../img/decorador2.svg") no-repeat;
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  top: 13px;
+}
+
+.topo-menu a:hover {
+  border-bottom: 3px solid #314237;
+}
+
+@media (max-width: 900px) {
+  .topo {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+} ;
